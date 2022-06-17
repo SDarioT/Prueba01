@@ -18,12 +18,13 @@ public class ParroquiaServicio implements IParroquiaServicio{
 
     @Override
     public Parroquia crear(Parroquia parroquia) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.ParroquiaList.add(parroquia);
+        return parroquia;
     }
 
     @Override
     public List<Parroquia> listar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.ParroquiaList;
     }
     
     

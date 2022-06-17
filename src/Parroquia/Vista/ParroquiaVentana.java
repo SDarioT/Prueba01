@@ -1,6 +1,9 @@
+package Parroquia.Vista;
+
 
 import Parroquia.Modelo.Parroquia;
 import Parroquia.control.ParroquiaControl;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
@@ -169,10 +172,12 @@ public class ParroquiaVentana extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String[] args=new String[4];
-        args[1]=this.jTextField1.getText();
-         args[2]=this.jTextField2.getText();
-          args[3]=this.jTextField3.getText();
-           args[4]=this.jTextField4.getText();
+        args[0]=this.jTextField1.getText();
+         args[1]=this.jTextField2.getText();
+          args[2]=this.jTextField3.getText();
+           args[3]=this.jTextField4.getText();
+           this.parroquiaControl.crear(args);
+           JOptionPane.showInternalMessageDialog(null, "Guardado");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
